@@ -1,11 +1,12 @@
 Summary:	Limited clone of Vypress Chat
 Name:		echat
 Version:	0.02r.beta4
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.vypress.com/ftp/clones/vyc/echat-0.02r.beta4.tgz
 Patch0:		%{name}-keys.patch
+Patch1:		%{name}-plcharset.patch
 BuildRequires:	ncurses-devel >= 5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -15,6 +16,7 @@ Limited clone of Vypress Chat.
 %prep
 %setup  -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__make} \
