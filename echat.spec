@@ -1,4 +1,5 @@
 Summary:	Limited clone of Vypress Chat
+Summary(pl):	Ograniczony klon Vypress Chat
 Name:		echat
 Version:	0.02r.beta4
 Release:	3
@@ -12,6 +13,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Limited clone of Vypress Chat.
+
+%description -l pl
+Ograniczony klon Vypress Chat.
 
 %prep
 %setup  -q
