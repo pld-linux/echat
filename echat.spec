@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.vypress.com/ftp/clones/vyc/echat-0.02r.beta4.tgz
+# Source0-md5:	789faa94ce8340adc2b240bf5de705b1
 Patch0:		%{name}-keys.patch
 Patch1:		%{name}-plcharset.patch
 BuildRequires:	ncurses-devel >= 5.1
