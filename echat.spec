@@ -15,7 +15,9 @@ Limited clone of Vypress Chat.
 %setup  -q
 
 %build
-%{__make} CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}"
+%{__make} \
+	CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}" \
+	DEFINES="-DLINUX -DEN -DPACKET_QCHAT -DCHARSET -DSOUND -DPORTREUSE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
