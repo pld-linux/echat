@@ -1,0 +1,12 @@
+diff -urN echat-0.04beta1.org/sock_udp.c echat-0.04beta1/sock_udp.c
+--- echat-0.04beta1.org/sock_udp.c	2003-08-20 15:11:25.000000000 +0200
++++ echat-0.04beta1/sock_udp.c	2003-08-20 15:27:01.000000000 +0200
+@@ -110,7 +110,7 @@
+         exit(EXIT_FAILURE);
+     }
+ #ifdef  PORTREUSE
+-    if (setsockopt(sfdcl, SOL_SOCKET, SO_REUSEPORT, &s, sizeof(s)) < 0) {
++    if (setsockopt(sfdcl, SOL_SOCKET, SO_REUSEADDR, &s, sizeof(s)) < 0) {
+ #ifdef  DEBUG
+         fprintf(debug_file, "setsockopt(): %s\n", strerror(errno));
+         fflush(debug_file);
