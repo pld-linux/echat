@@ -15,7 +15,7 @@ Limited clone of Vypress Chat.
 %setup  -q
 
 %build
-%{__make}
+%{__make} CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
