@@ -1,0 +1,11 @@
+diff -urN echat-0.02r.beta4.org/curs_strn.c echat-0.02r.beta4/curs_strn.c
+--- echat-0.02r.beta4.org/curs_strn.c	Sat May  3 22:09:56 2003
++++ echat-0.02r.beta4/curs_strn.c	Tue May  6 09:28:19 2003
+@@ -245,6 +245,7 @@
+ 	case KEY_DC:
+ 	    string_del(); break;
+ 	case KEY_BACKSPACE:
++	case 127:
+ 	    string_bs(); break;
+ 	case ENTER:		/* FIXME: backslash escaping */
+ 	    if (slash) { slash--; break; }
