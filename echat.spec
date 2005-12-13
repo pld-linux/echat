@@ -28,7 +28,7 @@ Ograniczony klon Vypress Chat.
 
 %build
 %{__make} \
-	CFLAGS="-I%{_includedir}/ncurses %{rpmcflags}" \
+	CFLAGS="-I/usr/include/ncurses %{rpmcflags}" \
 	DEFINES="-DLINUX -DEN -DCHARSET -DPORTREUSE"
 
 %install
