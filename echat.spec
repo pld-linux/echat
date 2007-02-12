@@ -1,5 +1,5 @@
 Summary:	Limited clone of Vypress Chat
-Summary(pl.UTF-8):   Ograniczony klon Vypress Chat
+Summary(pl.UTF-8):	Ograniczony klon Vypress Chat
 Name:		echat
 Version:	0.04beta1
 Release:	1
