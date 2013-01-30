@@ -1,0 +1,12 @@
+diff -urN echat-0.04beta1/chat_parm.c echat-0.04beta1.new/chat_parm.c
+--- echat-0.04beta1/chat_parm.c	2003-08-20 07:04:17.000000000 +0200
++++ echat-0.04beta1.new/chat_parm.c	2013-01-30 12:24:39.341755575 +0100
+@@ -57,7 +57,7 @@
+     strncat(message, "-DSHELL ", STR_SIZE);
+ #endif  /* SHELL */
+     strncat(message, "\n", STR_SIZE);
+-    fprintf(stdout, message);
++    fprintf(stdout, "%s", message);
+ }
+ 
+ void parm_getopt(int argc, char *argv[]) {

@@ -10,6 +10,7 @@ Source0:	http://deep.perm.ru/files/echat/%{name}-%{version}.tar.gz
 Patch0:		%{name}-keys.patch
 Patch1:		%{name}-plcharset.patch
 Patch2:		%{name}-so_reuseport.patch
+Patch3:		%{name}-format-security.patch
 URL:		http://deep.perm.ru/echat/
 BuildRequires:	ncurses-devel >= 5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,6 +26,7 @@ Ograniczony klon Vypress Chat.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 %{__make} \
